@@ -1,0 +1,33 @@
+# CodeX O Configuration File
+# Copy this to codexo.config in your project root and customize
+
+[thresholds]
+# Maximum lines of code before flagging a file
+loc = 800
+
+# Maximum cyclomatic complexity score
+complexity = 10
+
+[files]
+# File extensions to analyze
+include = ["py"]
+
+# Patterns to exclude (glob patterns)
+# exclude = ["test_*.py", "*_test.py", "migrations/*.py"]
+
+[output]
+# Output format: table, json, or csv
+format = "table"
+
+# Optional: save report to file
+# file = "codexo-report.txt"
+
+# Sort results by: loc, complexity, or filename
+sort_by = "loc"
+
+[analysis]
+# Enable complexity analysis
+calculate_complexity = true
+
+# Include cyclomatic complexity metrics
+include_cyclomatic = true
